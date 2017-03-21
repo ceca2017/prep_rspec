@@ -21,7 +21,8 @@ describe 'fizz_buzz' do    # Define the test examples
   end
 
   it "returns error to call with an integer if the number is not an integer" do
-    expect(fizz_buzz("fdfdsfds")). to eq "Please call with an integer number"
+    #expect(fizz_buzz("fdfdsfds")). to eq "Please call with an integer number"
+    expect(fizz_buzz(10.5)). to eq "Please call with an integer number"
   end
 
 end
